@@ -1,0 +1,21 @@
+additional:
+  # temporarily include repos manually # https://github.com/github/docs/issues/4894
+  - action-metadata
+  - action-npm-global-path
+  - action-google-cloud-sql-proxy
+  - action-github-registry-npm-proxy
+  - action-dotenv
+  - action-changed-files
+
+files:
+  - "!scripts/**"
+  - "!action.yml"
+  - "!README.md"
+  - "!docs/README.md"
+  - "!colophon.yml"
+  - "!**/template-sync.yml"
+  - "!.github/dependabot.yml"
+  - "!.github/workflows/*.yml"
+  - .github/template/push.yml: .github/workflows/push.yml
+  - .github/template/pull_request_target.yml: .github/workflows/pull_request_target.yml
+  - .github/template/dependabot.yml: .github/dependabot.yml
