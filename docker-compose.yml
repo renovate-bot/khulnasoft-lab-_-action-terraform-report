@@ -15,7 +15,7 @@ services:
 
   # ---- readme generator ---- #
   readme:
-    image: pandoc/minimal:2.19
+    image: pandoc/minimal:3.6
     volumes:
       - ./:/data
     command: --defaults=.pandoc.yml
